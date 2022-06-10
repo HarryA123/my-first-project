@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+        <STYLE>
+            #parent, #other, #me{
+                border: 3px solid gray;
+                margin: 5px;
+            }
+            #me{
+                /* offset */
+                background-color: bisque;
+                position:absolute;
+                left: 8px;
+            }
+        </STYLE> 
+    </HEAD>
+    <BODY>
+        <div id="other">other</div>
+        <div id="parent"> parent
+            <div id="me">me</div>
+        </div>  
+    </BODY>
+</HTML>

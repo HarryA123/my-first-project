@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        #change_color{
+            border:none;
+            padding: 0.5rem 1rem;
+            border-radius: 0.3rem;
+            background-color: salmon;
+            font-weight: bold;
+            color: white;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+<h1>WEB</h1>
+<input id='change_color'type="button" value="click me" onclick="
+    if(document.querySelector('#change_color').value === 'click me'){
+        document.querySelector('body').style.backgroundColor='pink';
+        document.querySelector('#change_color').style.border='none';
+        document.querySelector('#change_color').style.padding='0.5rem 1rem';
+        document.querySelector('#change_color').style.borderRadius='0.3rem';
+        document.querySelector('#change_color').style.backgroundColor='orange';
+        document.querySelector('#change_color').style.fontWeight='bold';
+        document.querySelector('#change_color').style.color='white';
+        document.querySelector('#change_color').style.width='100px';
+        document.querySelector('#change_color').value='i am here';
+    } else {
+        document.querySelector('body').style.backgroundColor='orange';
+        document.querySelector('#change_color').style.color='white';
+        document.querySelector('#change_color').style.backgroundColor='salmon';
+        document.querySelector('#change_color').value='click me';
+    }
+">
+
+
+
+<p>The World Wide Web (abbreviated WWW or the Web) is an information space where documents and other web resources are identified by Uniform Resource Locators (URLs), interlinked by hypertext links, and can be accessed via the Internet.[1] English scientist Tim Berners-Lee invented the World Wide Web in 1989. He wrote the first web browser computer program in 1990 while employed at CERN in Switzerland.[2][3] The Web browser was released outside of CERN in 1991, first to other research institutions starting in January 1991 and to the general public on the Internet in August 1991.</p>
+</body>
+</html>

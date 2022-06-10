@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+        body{
+            background-color: black;
+            transition-duration: 1s;
+            transition-property: all;
+        }
+      div{
+          background-color: black;
+          color: white;
+          padding: 100px;
+          width:100px;
+          height:40px;
+          transition-duration: 0.51s;
+          transition-property:all;
+          transition: all 500ms transition: all 500ms cubic-bezier(0.950, 0.050, 0.795, 0.035); transition-timing-function: cubic-bezier(0.950, 0.050, 0.795, 0.035);
+          }
+      div:hover{
+          height: 200px;
+
+      }
+    </style>
+  </head>
+  <body 
+  onload="document.quaryselector('body').style.backgroundcolor='white';">
+    <div>transition</div>
+  </body>
+</html>

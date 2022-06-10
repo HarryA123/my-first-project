@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <!-- float로 holy grail layout 만드는 방식은 이제 쓰이지 않는다. 요즘에는 flex 를 사용하기 때문에 그냥 이런 게 있었다 정도로 참고하면 된다. -->
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+        body{
+            border: 1px solid gray;
+            width: 540px;
+            margin: auto;
+        }
+        header{
+            border-bottom: 1px solid gray;
+            text-align: center;
+        }
+        nav{
+            float:left;
+            width:120px;
+            border-right: 1px solid gray;
+        }
+        main{
+            float:left;
+            width:300px;
+            border-left: 1px solid gray;
+            border-right: 1px solid gray;
+            margin-left: -1px;
+            padding: 5px;
+        }
+        aside{
+            float:left;
+            width:120px;
+            border-left: 1px solid gray;
+            margin-left: -1px;
+        }
+        footer{
+            border-top:1px solid gray;
+            padding: 20px;
+            text-align: center;
+            clear:both;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+        <h1>백과사전</h1>
+    </header>
+
+    <section class="content">
+
+      <nav>
+        <ul>
+          <li>바나나</li>
+          <li>옥수수</li>
+          <li>핸드폰</li>
+        </ul>
+      </nav>
+
+      <main>
+        핸드폰
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos hic,
+          neque quasi doloremque, accusantium eveniet odio adipisci minus
+          numquam facilis cum temporibus dele eaque dignissimos ipsa est porro!
+          Quidem quod sint quasi ab perferendis? Ullam dignissimos maiores
+          nobis, unde vel enim nisi! Cumque quas blanditiis dolore aperiam ea
+          recusandae qui amet, tenetur provident, consectetur nisi. Reiciendis,
+          veritatis asperiores.
+        </p>
+      </main>
+
+      <aside>
+          AD
+      </aside>
+    </section>
+
+    <footer>
+      <a href="https://www.naver.com/">copyright@study.com</a>
+    </footer>
+  </body>
+</html>

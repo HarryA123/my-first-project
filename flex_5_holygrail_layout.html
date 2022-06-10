@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+        <STYLE>
+            .container{
+                display: flex;
+                flex-direction: column;
+            }
+            header{
+                border-bottom: 1px solid gray;
+                padding-left: 20px;
+                text-align: center;
+            }
+            footer{
+                border-top: 1px solid gray;
+                padding: 20px;
+                text-align: center;
+            }
+            .content{
+                display: flex;
+            }
+            .content main{
+                padding: 10px;
+            }
+            .content nav{
+                border-right: 1px solid gray;
+            }
+            .content aside{
+                border-left: 1px solid gray;
+            }
+            .container nav, aside{
+                flex-basis:150px;
+                flex-shrink: 0;
+            }
+        </STYLE> 
+    </HEAD>
+    <BODY>
+        <div class="container">
+            <header>
+                <h1>백과사전</h1>
+            </header>
+            <section class="content">
+                <nav>
+                    <ul>
+                        <li>사과</li>
+                        <li>복숭아</li>
+                        <li>바나나</li>
+                    </ul>
+                </nav>
+                <main>
+                    Lorem um aliquid odit,ere? Quasi eos obcaecati cum repellat s ducimus numquam praesentium beatae debitis, autem eligendi facere in ipsum exercitationem temporibus asperiores adipisci iste consequatur dicta voluptate ab dolores! No*strum eveniet in odio, quae enim hic modi accusamus veritatis id nobis voluptates et consequatur iure, incid
+                </main>
+                <aside> 
+                    <!-- 중요하지 않은 것을 보통 aside 태그로 감싼다. -->
+                    AD
+                </aside>
+            </section>
+            <footer>
+                <a href="https://news.naver.com/">홈페이지</a>
+            </footer>
+        </div>
+    </BODY>
+</HTML>

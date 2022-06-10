@@ -1,0 +1,84 @@
+<!doctype>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+        header{
+            border-bottom:1px solid gray;
+            padding-left:20px;
+        }
+        footer{
+            border-top:1px solid gray;
+            padding:20px;
+            text-align: center;
+        }
+        .content{
+            display:flex;
+        }
+        .content nav{
+            border-right:1px solid gray;
+        }
+        .content aside{
+            border-left:1px solid gray;    
+        }
+        nav, aside{
+            flex-basis: 150px;
+            flex-shrink: 0;
+        }
+        main{
+            padding:10px;
+        }
+        @media(max-width:700px){
+            .content{
+                flex-direction:column;
+        }
+        .content nav{
+            border: none;
+            flex-basis:auto;
+            }
+        .content aside{
+            border: none;
+            flex-basis:auto;
+            }
+        main{
+            order: 0;
+        }
+        nav{
+            order:1;
+        }
+        aside{
+            order:2;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>백과사전</h1>
+        </header>
+        <section class="content">
+            <nav>
+                <ul>
+                    <li>오징어</li>
+                    <li>바나나</li>
+                    <li>핸드폰</li>
+                </ul>
+            </nav>
+            <main>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis veniam totam labore ipsum, nesciunt temporibus repudiandae facilis earum, sunt autem illum quam dolore, quae optio nemo vero quidemumquam ratione quaerat. Quos omnis neque atque, id perferendis possimus, alias, dignissimos doloribus ducimus similique ratione vitae eos laudantium, tempore cupiditate quod consectetur! Voluptas enim laboriosam nesciunt rem. Recusandae beatae numquam asperiores adipisci neque, vel pariatur suscipit provident, a est magni. Laborum dolore incidunt saepe ipsam? Eveniet doloremque animi maxime aliquid rem fugit dolor dignissimos! Quo, ut quod ab.
+            </main>
+            <aside>
+                AD
+            </aside>
+        </section>
+        <footer>
+            <a href="https://opentutorials.org/course/1">홈페이지</a>
+        </footer>
+    </div>
+</body>
+</html>
