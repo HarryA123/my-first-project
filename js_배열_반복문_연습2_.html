@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+<body>
+    <h1>array</h1>
+    <h5>과일 3종류를 배열하시오.</h5>
+    <ul>
+        <script>
+            var fruit = ['banana', 'mango', 'papaya'];
+            document.write(fruit[0]);
+            document.write(fruit[1]);
+            document.write(fruit[2]);
+            fruit.push('apple')
+            document.write(fruit.length);
+        </script>    
+    </ul>
+    <br><br>
+
+    <h1>loop statement</h1>
+    <h5>banana, mango, papaya, apple을 리스트로 만들고 mango와 papaya를 세 번 반복하시오. (단, 반복문을 사용할 것)</h5>
+    <ul>
+        <script>
+            document.write('<li>banana</li>');
+            var i = 0;
+            while( i < 3) {
+            document.write('<li>mango</li>');
+            document.write('<li>papaya</li>');
+            i = i + 1;
+            }
+            document.write('<li>apple</li>');
+        </script>
+    </ul>
+</body>
+</html>
